@@ -1,0 +1,125 @@
+/* Container with a deep dark gradient */
+.expense-container {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #1e293b, #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #f8fafc;
+}
+
+/* Glassmorphism Card */
+.tracker-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.tracker-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+  background: linear-gradient(to right, #4ade80, #2dd4bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Total Section */
+.total-display {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+.total-display p { color: #94a3b8; font-size: 0.9rem; margin: 0; }
+.total-display h2 { font-size: 2.2rem; margin: 5px 0 0 0; color: #4ade80; }
+
+/* Input Styling */
+.input-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.custom-input {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: white;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.custom-input:focus {
+  border-color: #4ade80;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);
+}
+
+.add-btn {
+  width: 100%;
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 700;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.add-btn:hover {
+  background: #4ade80;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+}
+
+/* List Styling */
+.expense-list {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(51, 65, 85, 0.4);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  border-left: 4px solid #ef4444;
+  transition: transform 0.2s;
+}
+
+.expense-item:hover {
+  transform: scale(1.02);
+  background: rgba(51, 65, 85, 0.6);
+}
+
+.exp-title { font-weight: 600; color: #e2e8f0; }
+.exp-amount { font-size: 1.1rem; font-weight: 700; color: #4ade80; }
+
+.delete-icon-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.delete-icon-btn:hover { color: #ef4444; }

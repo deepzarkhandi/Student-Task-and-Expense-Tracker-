@@ -1,0 +1,68 @@
+/* Home style background */
+
+.login-container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background: linear-gradient(
+    90deg,
+    #1e293b 0%,
+    #0f172a 40%,
+    #020617 100%
+  );
+}
+
+/* Login Card */
+
+.login-card{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+
+  padding:40px;
+  border-radius:15px;
+  width:350px;
+  text-align:center;
+}
+
+/* Title */
+
+.login-title{
+  color:#22c55e;
+  margin-bottom:25px;
+}
+
+/* Form */
+
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+/* Inputs */
+
+.login-input{
+  padding:12px;
+  border-radius:8px;
+  border:none;
+  outline:none;
+}
+
+/* Button */
+
+.login-btn{
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:#10b981;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.login-btn:hover{
+  background:#059669;
+}
